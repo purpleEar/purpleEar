@@ -1,0 +1,1356 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*****************************
+
+SmackJeeves Theme : "Geometric Sketchbook" a.k.a. "School Doodles"
+Created by : Laura Kajpust (falconer / delusioninabox)
+http://delusioninabox.com/
+
+******************************/
+
+
+/*****************************
+BASIC BODY STYLES
+******************************/
+
+body {
+	background: /*url("link")*/ #F8EDD1;
+    /* color hex code is fallback if image fails to load */
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: #474843;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100%;
+    min-width: 450px;
+}
+
+#overall_wrapper {
+	overflow: hidden;
+}
+
+div,
+main,
+footer,
+header {
+    box-sizing: border-box;
+}
+
+.align-text-right {
+    text-align: right;
+}
+
+.align-text-left {
+    text-align: left;
+}
+
+.align-text-center {
+    text-align: center;
+}
+
+.header-border {
+    clear: both;
+    height: 19px;
+    width: 100%;
+	/*background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-top-doodle.png");
+	background-repeat: repeat-x;*/
+}
+
+.footer-border {
+    clear: both;
+    height: 19px;
+    width: 100%;
+	/*background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-footer-doodle.png");
+    background-repeat: repeat-x; */
+    margin-bottom: 10px;
+}
+
+.content-border {
+    clear: both;
+    height: 19px;
+    max-width: 1100px;
+    width: initial;
+    position: relative;
+    margin: 20px -60px;
+	/*background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-content-doodle.png");
+    background-repeat: repeat-x; */
+}
+
+.fa {
+    margin: 0px 5px;
+}
+
+.clear {
+    clear: both;
+}
+
+.clear.line-break {
+    height: 60px;
+}
+
+p:empty,
+.news .news-body br:empty,
+.body .title:empty {
+    display: none;
+}
+
+pre {
+    white-space: normal;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*****************************
+TYPOGRAPHY : TEXT & LINK COLORS/SIZES
+******************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin: 0px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2.4em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.6em;
+}
+
+h6 {
+    font-size: 1.3em;
+}
+
+.comic_nav a,
+.read_link {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 1.5em;
+}
+
+.title,
+h1.header {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: #207e8f;
+}
+
+a:hover,
+a:focus {
+    color: #326779;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+    margin-bottom: 20px;
+    color: #207e8f;
+    line-height: 100%;
+}
+
+body .title {
+    color: #207e8f;
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin: 10px 0px 30px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+header nav ul#main-menu li a,
+header nav ul#main-menu li a:active,
+header nav ul#main-menu li a:visited {
+    font-family: 'Love Ya Like A Sister', cursive;
+    color: #FFF;
+}
+
+header nav ul#main-menu li>a:hover,
+header nav ul#main-menu li>a:focus,
+header nav ul#main-menu li:hover>a,
+header nav ul#main-menu li:focus>a {
+    color: #9D9D93;
+}
+
+#Top-Social-Bar a,
+#Top-Social-Bar a:visited,
+#Top-Social-Bar a:active {
+    color: #9D9D93;
+}
+
+#Top-Social-Bar a:hover,
+#Top-Social-Bar a:focus {
+    color: #FFF;
+}
+
+footer a,
+footer a:visited,
+footer a:active {
+	color: #9D9D93;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #fff;
+}
+
+.quote {
+    color: #509eb5;
+    padding-bottom: 20px;
+}
+
+.genmed {
+    color: #4fd8ff;
+    font-size: 1.3em;
+}
+
+.arch-title {
+    color: #207e8f;
+    font-size: 1.2em;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.arch-date {
+    color: #83d1e8;
+    font-size: 0.8em;
+}
+
+
+/*****************************
+TOP SOCIAL MEDIA BAR
+******************************/
+
+#Top-Social-Bar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #207e8f;
+    color: #83d1e8;
+    padding: 10px 40px;
+    text-align: right;
+    z-index 1;
+}
+
+
+/*****************************
+HEADER
+******************************/
+
+header {
+    width: 100%;
+    position: relative;
+    left: 0px;
+    top: 40px;
+    background: #326779;
+    color: #FFF;
+    text-align: center;
+    overflow-x: hidden;
+    padding-top: 1px;
+}
+
+header #top-left-image {
+	background: url("http://www.smackjeeves.com/templates/sketchbook/images/header-top-lpencil.png") #326779;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+    height: 83px;
+    width: 227px;
+}
+
+header #top-right-image {
+	background: url("http://www.smackjeeves.com/templates/sketchbook/images/header-top-rpencil.png") #326779;
+    position: absolute;
+    right: 0px;
+    top: 25%;
+    height: 83px;
+    width: 227px;
+}
+
+header h1.site-title {
+    border-bottom: 1px dashed #509eb5;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+/*****************************
+MAIN BODY SECTION
+******************************/
+
+main {
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 60px 40px;
+    position: relative;
+    top: 40px;
+    background: #fff;
+}
+
+
+/*****************************
+NAVIGATION
+******************************/
+
+header nav ul#main-menu {
+    font-family: 'Love Ya Like A Sister', cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    width: 95%;
+    max-width: 1100px;
+    list-style: none;
+    padding: 0px;
+}
+
+header nav ul#main-menu li {
+    display: inline-block;
+    padding: 0px 20px;
+    position: relative;
+}
+
+header nav .mobile-toggle,
+header nav [id^=drop] {
+    display: none;
+    position: relative;
+    top: -7px;
+}
+
+header nav ul#main-menu li ul.submenu {
+    display: none;
+    z-index: 5;
+    position: absolute;
+    margin-left: -0.8em;
+    padding-left: 0px;
+    background: #326779;
+    color: #FFF;
+    overflow: initial;
+    padding-bottom: 20px;
+}
+
+header nav ul#main-menu li [id^="drop-"]:checked~ul.submenu,
+header nav ul#main-menu li ul.submenu li {
+    display: block;
+    text-align: left;
+}
+
+header nav ul#main-menu li ul.submenu li {
+    padding: 20px 20px 0px;
+}
+
+header nav ul#main-menu li label:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -0.6em;
+    width: 1em;
+}
+
+header nav ul#main-menu li [id^="drop-"]:checked+label:before {
+    content: "\f0d7";
+}
+
+
+/*****************************
+COMIC PAGE STYLES
+******************************/
+
+.comic-wrapper {
+	position: relative;
+	display: inline-block;
+	margin: 2.5em 0 30px;
+}
+
+#comic_area_inner #comic_image {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+	border-color: #207e8f;
+	border-width: 20px;
+    border-style: solid;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+#comic_jumpbox select,
+#comic_jumpbox select option,
+#comic_jumpbox select optgroup option,
+#comic_jumpbox .jumpbox_page {
+    border: 0px;
+    font-size: 1.1em;
+    background: #fff;
+    color: #207e8f;
+    padding: 4px 5%;
+    width: 100%;
+    text-align: left;
+	font-family: 'Raleway', sans-serif;
+}
+
+#comic_jumpbox select optgroup,
+#comic_jumpbox .jumpbox_chapter {
+	background: #d5d5d5;
+	font-weight: bold;
+}
+
+.publish-date {
+	font-size: 1.1em;
+	position: absolute;
+	top: -2.75em;
+	right: 0;
+	text-align: right;
+	padding: 0 5%;
+}
+
+.publish-date > div {
+	display: inline-block;
+	color: #326779;
+	background: #83d1e8;
+	border-radius: 20px 20px 0px 0px;
+	-moz-border-radius: 20px 20px 0px 0px;
+	-webkit-border-radius: 20px 20px 0px 0px;
+	padding: .75em 1.8em 1.8em;
+	position: relative;
+	z-index: 0;
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+div#goo_ad {
+	margin: 0 -30px 20px;
+	overflow: hidden;
+}
+
+#goo_ad #logintext {
+	font-size: 14px;
+	line-height: normal;
+}
+
+.comment {
+    max-width: 100%;
+}
+
+.comment .content {
+	font-size: .5cm;
+	line-height: 1.3em;
+	word-break: break-word;
+}
+
+.comment .avatar img,
+img.avatar {
+    width: 125px;
+    height: auto;
+    border-color: #FFF;
+    border-style: solid;
+    border-width: 10px;
+	margin: 0 25px 25px 0;
+    float: left;
+    -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.comment .post_tools {
+    background: #83d1e8;
+    list-style: none;
+    padding: 4px 0px;
+    color: #326779;
+    margin: 20px 0px 40px;
+    width: 100%;
+}
+
+.comment.reply .post_tools {
+	background: #c8c8c8;
+}
+
+.post_tools li {
+    display: inline-block;
+}
+
+.post_tools a:not(.username),
+.post_tools a:not(.username):link,
+.post_tools a:not(.username):visited,
+.post_tools a.username:hover {
+    color: #326779;
+    white-space: nowrap;
+}
+
+.post_tools a:not(.username):hover,
+.post_tools a.username,
+.post_tools a.username:link,
+.post_tools a.username:visited {
+    color: #207e8f;
+}
+
+.comment.reply {
+    width: 92%;
+    margin-left: 8%;
+}
+
+.cfooter-container {
+    position: absolute;
+    left: 50%;
+    width: 80%;
+    max-width: 400px;
+    bottom: 0;
+}
+
+.comments-footer {
+    text-align: center;
+    background: #FFF;
+    width: 80%;
+    max-width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: -40%;
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+.comments-footer .post_comment h4 {
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 20px;
+    color: #207e8f;
+    line-height: 100%;
+	border-color: #e9e9e9;
+	border-width: 2px 0px;
+	border-style: solid;
+}
+
+.comments-footer .note-corner {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1px;
+    top: 11px;
+    z-index: 1;
+}
+
+.comments-footer .note-corner-shadow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid rgba(0, 0, 0, 0.5);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 1px;
+    top: 11px;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -ms-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.comments-footer .note-corner-reverse {
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-top: 35px solid #fff;
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    position: absolute;
+    right: -30px;
+    top: -16px;
+    z-index: 2;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);
+}
+
+#sj_fb_widget {
+    position: relative;
+    height: 0px;
+    top: -32px;
+    min-height: 0px !important;
+}
+
+/*****************************
+HOMEPAGE
+******************************/
+
+.home img {
+    height: 150px;
+    width: auto;
+    border-color: #FFF;
+    border-width: 10px;
+    border-style: solid;
+    display: block;
+    margin-bottom: 20px;
+    -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.home {
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#home_welcome {
+	background: url("http://www.smackjeeves.com/templates/sketchbook/images/header-top-rpencil.png");
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+
+#home_latest {
+	background: url("http://www.smackjeeves.com/templates/sketchbook/images/header-top-lpencil.png");
+	background-repeat: repeat-x;
+	background-position: right center;
+}
+
+#home_welcome img {
+    float: right;
+    margin-right: 30px;
+}
+
+#home_latest img {
+    float: left;
+    margin-left: 30px;
+}
+
+.home .read_link {
+    clear: both;
+    position: relative;
+    display: block;
+}
+
+#home_welcome .read_link {
+    text-align: right;
+    margin-right: 30px;
+}
+
+#home_latest .read_link {
+    text-align: left;
+    margin-left: 30px;
+}
+
+
+/*****************************
+NEWS
+******************************/
+
+#home_news {
+    margin-top: 30px;
+}
+
+.post {
+    margin-bottom: 30px;
+}
+
+.post .bcontainer {
+	border: 1px dashed #83d1e8;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.post .post-title {
+    background: #83d1e8;
+    padding: 10px 20px;
+    font-size: 1.8em;
+    color: #645848;
+    line-height: 130%;
+}
+
+.post .date {
+    color: #83d1e8;
+    font-size: 1.5em;
+    font-weight: light;
+    padding: 20px;
+}
+
+.post .news-body {
+    padding: 0px 20px 25px;
+}
+
+.post img.avatar {
+	margin-bottom: 0;
+}
+
+.post .news-footer {
+    background: #83d1e8;
+    color: #645848;
+    padding: 3px 20px;
+}
+
+.post .news-footer .comments-link {
+    float: right;
+}
+
+.post .news-footer .comments-link,
+.post .news-footer .comments-link:link,
+.post .news-footer .comments-link:visited {
+    color: #326779;
+}
+
+.post .news-footer .comments-link:hover {
+    color: #207e8f;
+}
+
+.post .news-body ul,
+.comment .body ul {
+    list-style: none;
+}
+
+.post .news-body ul li:before,
+.comment .body ul li:before {
+    content: "\f178";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -0.6em;
+    width: 1.3em;
+}
+
+.genmed:before {
+    content: "\f10d";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+}
+
+img.avatar {
+    float: right;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+#news_archive_wrapper {
+    margin-top: 30px;
+}
+
+#news_archive_wrapper .post img.avatar {
+	margin-bottom: 25px;
+}
+
+#archive_list {
+	position: relative;
+}
+
+#archive_list .dd {
+	position: absolute;
+	width: 50%;
+	top: 0;
+	right: 0;
+}
+
+#archive_list .months,
+#archive_list .dropdown-toggle.primary {
+	display: block;
+	background: #83d1e8;
+	list-style: none;
+	padding: 0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#archive_list .months {
+	position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 4;
+    margin: 0;
+}
+
+#archive_list .months li ul.month-dropdown {
+	list-style: none;
+	padding: 0px;
+}
+
+#archive_list .months .post-item {
+	margin: 0 20px 10px;
+}
+
+#archive_list .months .post-item.selected {
+	background: #83d1e8;
+}
+
+#archive_list .months li a,
+#archive_list .dropdown-toggle.primary {
+	display: block;
+	padding: 10px 20px;
+}
+
+#archive_list .months ul.month-dropdown li a:before {
+	content: "\f178";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin-left: -0.6em;
+	width: 1.3em;
+}
+
+#archive_list .dropdown-toggle.primary:before {
+	content: "\f073";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin: 0 0.25em 0 -0.6em;
+	width: 1.3em;
+}
+
+#archive_list .months li a:before {
+	content: "\f271";
+	font-family: FontAwesome;
+	display: inline-block;
+	margin: 0 0.25em 0 -0.6em;
+	width: 1.3em;
+	color: #326779;
+}
+
+#archive_list .months li.selected,
+#archive_list .months li.selected a {
+	background: #fff;
+}
+
+#archive_list .months li .dropdown-toggle {
+	width: 97%;
+	display: inline-block;
+}
+
+#archive_list .months,
+#archive_list [id^=pridrop] {
+	display: none;
+}
+
+#archive_list [id^=pridrop]:checked+ul.months {
+	display: block;
+}
+
+
+/*****************************
+COMIC ARCHIVE
+******************************/
+
+.chapter-title {
+    background: #83d1e8;
+    padding: 10px 60px;
+    font-size: 1.5em;
+}
+
+.chapter-title.selected {
+    background: #207e8f;
+    color: #FFF;
+}
+
+.comic-archive .row {
+    border: 1px dashed #83d1e8;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.comic-archive .ch-list-full:last-child .row:last-child {
+    border-bottom: 1px dashed #83d1e8;
+}
+
+.comic-archive .ch-list-full > .row:first-child {
+    border-top: 1px dashed #83d1e8;
+}
+
+.comic-archive .chapter-title.selected + script + .ch-list-full > .row:first-child {
+    border-top: 0px;
+}
+
+.comic-archive .row div img {
+	border-color: #207e8f;
+	border-width: 2px;
+    border-style: solid;
+    display: block;
+    margin-bottom: 20px;
+    -moz-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.comic-archive .row div {
+    padding: 0px 40px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.comic-archive .row div.empty {
+	padding: 0;
+}
+
+.arch-title,
+.arch-date {
+    display: block;
+    width: 100%;
+}
+
+.comic-archive .chapter-title + script + .ch-list-full,
+.ch-toggle {
+    display: none;
+}
+
+.comic-archive .chapter-title.selected+script+.ch-list-full {
+    display: block;
+}
+
+.comic-archive .chapter-title label:before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -0.6em;
+    width: 1em;
+}
+
+.comic-archive .chapter-title.selected label:before {
+    content: "\f0d7";
+}
+
+.chapter-title label {
+    width: 100%;
+    display: block;
+}
+
+.ch-list-full .row:first-child {
+    padding-top: 30px;
+}
+
+.ch-list-full .row:last-child {
+    padding-bottom: 30px;
+}
+
+
+/*****************************
+FOOTER
+******************************/
+
+footer {
+    background: #207e8f;
+    color: #bad3d7;
+    width: 100%;
+    position: relative;
+    margin-top: 40px;
+}
+        
+footer h4 {
+	color: #FFFFFF;
+}
+
+
+/*****************************
+MEDIUM SCREEN (641px - 1200px wide)
+******************************/
+
+@media all and (min-width:641px) and (max-width:1200px) {
+    header nav ul#main-menu {
+        font-size: 1.2em;
+    }
+    header #top-right-image {
+        right: -200px;
+    }
+    header #top-left-image {
+        left: -200px;
+    }
+    .comic_nav {
+        text-align: center;
+    }
+    .comic_nav .fa {
+        font-size: 2em;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+    }
+    #sj_fb_widget {
+        left: 0px;
+        position: relative;
+    }
+    #archive_list .dropdown-toggle.primary,
+    #archive_list .months {
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #archive_list .months li .dropdown-toggle {
+        width: 95%;
+    }
+    .comic-archive .row div {
+        text-align: center;
+    }
+    .comic-archive .row div img {
+        margin: 0px auto 20px;
+    }
+}
+
+
+/*****************************
+NOT MOBILE (>640px wide)
+******************************/
+
+@media all and (min-width:641px) {
+	#news_archive_wrapper .post .news-body img {
+		max-width: calc(100% - 175px);
+	}
+}
+
+/*****************************
+MOBILE (640px wide)
+******************************/
+
+@media all and (max-width:640px) {
+    header #top-right-image,
+    header #top-left-image {
+        display: none;
+    }
+    header {
+        max-height: none;
+        position: relative;
+        top: 14px;
+        padding-top: 20px;
+        z-index: 0;
+    }
+    header h1.site-title {
+        line-height: 100%;
+    }
+    main {
+        width: 100%;
+        top: 14px;
+        padding: 20px 30px 30px;
+		background: #fff;
+    }
+    footer {
+        position: relative;
+        top: 14px;
+    }
+    footer .row {
+    	padding: 20px;
+    }
+    footer .col-4 {
+    	margin-bottom: 20px;
+    }
+    #Top-Social-Bar {
+        z-index: 1;
+    }
+    #comic_jumpbox {
+        display: none;
+    }
+    .comic_nav .col-2 {
+        width: 25%;
+    }
+    .comic_nav .btn-text {
+        display: none;
+    }
+    #sj_fb_widget {
+        display: none;
+    }
+    .comment {
+        overflow-x: hidden;
+    }
+    .post_tools li:first-child {
+        width: 33%;
+    }
+    .poster.username {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+    .poster.date {
+        display: none !important;
+    }
+    .home {
+        width: 100%;
+    }
+    #home_welcome img,
+    #home_welcome .read_link {
+        margin-right: 0px;
+    }
+    #home_latest img,
+    #home_latest .read_link {
+        margin-left: 0px;
+    }
+	#archive_list .dd {
+		position: relative;
+		width: 100%;
+		right: 0;
+		margin: -15px 0 30px;
+	}
+    #archive_list .dropdown-toggle.primary,
+    #archive_list .months {
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #archive_list .months li .dropdown-toggle {
+        width: 95%;
+    }
+    #archive_right+.clear.line-break {
+        height: 90px;
+    }
+    .comic-archive .row {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .comic-archive .row div {
+        text-align: center;
+        padding: 20px 40px;
+    }
+    .comic-archive .row div.empty {
+    	display: none;
+    }
+    .comic-archive .row div img {
+        margin: 0px auto 20px;
+    }
+    .ch-list-full .row:first-child {
+        padding-top: 20px;
+    }
+    .ch-list-full .row:last-child {
+        padding-bottom: 20px;
+    }
+    /*****************************
+    MOBILE MENU
+    ******************************/
+    header nav ul#main-menu ul,
+    [id^=drop]:not(:checked)+ul#main-menu {
+        display: none;
+    }
+    header nav .mobile-toggle {
+        font-family: 'Love Ya Like A Sister', cursive;
+        text-align: center;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        width: 95%;
+        padding: 0px;
+        margin-bottom: 5px;
+    }
+    header nav ul#main-menu {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    header nav ul#main-menu li {
+        padding: 10px 30px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    header nav ul#main-menu li:hover {
+        background: #207e8f;
+    }
+    header nav .mobile-toggle,
+    [id^=drop]:checked+ul#main-menu {
+        display: block;
+    }
+    header nav ul#main-menu li ul.submenu {
+        position: relative;
+        background: none;
+    }
+    header nav ul#main-menu li ul.submenu li {
+        padding-left: 50px;
+    }
+}
+
+
+/*****************************
+MOBILE EXCEPTIONS (under 640px wide)
+******************************/
+
+@media all and (max-width:430px) {
+    .bcontainer .avatar {
+        float: none;
+        margin: 0px auto;
+        display: block;
+    }
+    .post .bcontainer {
+        padding-top: 20px;
+    }
+}
+
+/*****************************
+FOOTER TWEAK (under 1200px wide)
+******************************/
+@media all and (max-width:1200px) {
+    footer .col-4:last-child {
+    	margin: 20px 0 0;
+    }
+}
+
+
+/*****************************
+GRID SYSTEM : 12-column structure
+    1) set up column divs in a div with class "row"
+    2) col-#s must add up to 12
+
+    EX:
+        col-6 & col-6 = 2 boxes
+        col-4, col-4, & col-4 = 3 boxes
+        col-4 & col-8 = a smaller box with a wider box
+******************************/
+
+.row {
+    margin: auto;
+    width: 100%;
+    max-width: 1100px;
+    clear: both;
+    display: table;
+    padding: 20px 0px;
+    border-spacing: 0;
+}
+
+.row .col-1,
+.row .col-2,
+.row .col-3,
+.row .col-4,
+.row .col-5,
+.row .col-6,
+.row .col-7,
+.row .col-8,
+.row .col-9,
+.row .col-10,
+.row .col-11 {
+    padding: 0px 20px;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.row .col-1 {
+    width: 8%;
+}
+
+.row .col-2 {
+    width: 16%;
+}
+
+.row .col-3 {
+    width: 25%;
+}
+
+.row .col-4 {
+    width: 33%;
+}
+
+.row .col-5 {
+    width: 41%;
+}
+
+.row .col-6 {
+    width: 50%;
+}
+
+.row .col-7 {
+    width: 58%;
+}
+
+.row .col-8 {
+    width: 66%;
+}
+
+.row .col-9 {
+    width: 75%;
+}
+
+.row .col-11 {
+    width: 91%;
+}
+
+.row .col-12 {
+    width: 100%;
+}
+
+
+/*****************************
+MEDIUM GRID (640 - 1200px wide)
+******************************/
+
+@media all and (min-width:640px) and (max-width:1200px) {
+    .row:not(.static-row) .col-1,
+    .row:not(.static-row) .col-2,
+    .row:not(.static-row) .col-3,
+    .row:not(.static-row) .col-4,
+    .row:not(.static-row) .col-5,
+    .row:not(.static-row) .col-6 {
+        width: 49%;
+        display: inline-block;
+    }
+    .row:not(.static-row) .col-4:first-child {
+        float: left;
+    }
+    .row:not(.static-row) .col-4:last-child,
+    .row:not(.static-row) .col-7,
+    .row:not(.static-row) .col-8,
+    .row:not(.static-row) .col-9,
+    .row:not(.static-row) .col-10,
+    .row:not(.static-row) .col-11 {
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+/*****************************
+MOBILE GRID (640px wide)
+******************************/
+
+@media all and (max-width:640px) {
+    .row:not(.static-row) .col-1,
+    .row:not(.static-row) .col-2,
+    .row:not(.static-row) .col-3,
+    .row:not(.static-row) .col-4,
+    .row:not(.static-row) .col-5,
+    .row:not(.static-row) .col-6,
+    .row:not(.static-row) .col-7,
+    .row:not(.static-row) .col-8,
+    .row:not(.static-row) .col-9,
+    .row:not(.static-row) .col-10,
+    .row:not(.static-row) .col-11 {
+        width: 100%;
+        display: inline-block;
+    }
+}
