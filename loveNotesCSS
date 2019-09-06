@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/* CSS Document */
-
 /*****************************
 
 SmackJeeves Theme : "Geometric Sketchbook" a.k.a. "School Doodles"
@@ -15,11 +12,11 @@ BASIC BODY STYLES
 ******************************/
 
 body {
-	background: /*url("link")*/ #F8EDD1;
+	background: url/*("http://www.smackjeeves.com/templates/sketchbook/images/wov-blue.png")*/ #bcf0ff;
     /* color hex code is fallback if image fails to load */
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    color: #474843;
+    color: #326779;
     line-height: 26px;
     padding: 0;
     margin: 0;
@@ -56,16 +53,16 @@ header {
     clear: both;
     height: 19px;
     width: 100%;
-	/*background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-top-doodle.png");
-	background-repeat: repeat-x;*/
+	background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-top-doodle.png");
+	background-repeat: repeat-x;
 }
 
 .footer-border {
     clear: both;
     height: 19px;
     width: 100%;
-	/*background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-footer-doodle.png");
-    background-repeat: repeat-x; */
+	background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-footer-doodle.png");
+    background-repeat: repeat-x;
     margin-bottom: 10px;
 }
 
@@ -76,8 +73,8 @@ header {
     width: initial;
     position: relative;
     margin: 20px -60px;
-	/*background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-content-doodle.png");
-    background-repeat: repeat-x; */
+	background: url("http://www.smackjeeves.com/templates/sketchbook/images/border-content-doodle.png");
+    background-repeat: repeat-x;
 }
 
 .fa {
@@ -201,13 +198,13 @@ header nav ul#main-menu li>a:hover,
 header nav ul#main-menu li>a:focus,
 header nav ul#main-menu li:hover>a,
 header nav ul#main-menu li:focus>a {
-    color: #9D9D93;
+    color: #4fd8ff;
 }
 
 #Top-Social-Bar a,
 #Top-Social-Bar a:visited,
 #Top-Social-Bar a:active {
-    color: #9D9D93;
+    color: #83d1e8;
 }
 
 #Top-Social-Bar a:hover,
@@ -218,7 +215,7 @@ header nav ul#main-menu li:focus>a {
 footer a,
 footer a:visited,
 footer a:active {
-	color: #9D9D93;
+	color: #4fd8ff;
 }
 
 footer a:hover,
